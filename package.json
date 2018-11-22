@@ -1,0 +1,24 @@
+{
+  "name": "lap-timer-api",
+  "version": "0.1.0",
+  "description": "API for Lap Timer",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulff/lap-timer-api.git"
+  },
+  "author": "ulff.pl@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ulff/lap-timer-api/issues"
+  },
+  "homepage": "https://github.com/ulff/lap-timer-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
