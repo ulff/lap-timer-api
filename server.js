@@ -1,7 +1,7 @@
 const app = require('./src/app');
 
-const server = app.listen(3000, () => {
-  console.log('Server running on port 3000');
+const server = app.listen(8080, '0.0.0.0', () => {
+  console.log('Server running on port 8080');
 });
 
 process.on('SIGTERM', () => {
