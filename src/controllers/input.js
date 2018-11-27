@@ -13,17 +13,6 @@ router.post('/laps',  (req, res) => {
   console.log('Created lap');
   console.log(lap);
 
-  // const { MongoClient } = require('mongodb');
-  //
-  // MongoClient.connect('mongodb://mongo:27017/LapTimerApi', (err, db) => {
-  //   if (err) {
-  //     return console.log('Unable to connect to mongodb server.');
-  //   }
-  //   console.log('Connected to mongodb server');
-  //
-  //   db.close();
-  // });
-
   lap.save().then((document) => {
     console.log('saved lap');
     console.log(lap);

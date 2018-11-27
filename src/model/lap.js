@@ -1,6 +1,6 @@
-const { connection } = require('mongoose');
+const mongoose = require('mongoose');
 
-const Lap = connection.model('Lap', {
+const Lap = mongoose.model('Lap', {
   time: {
     type: Number,
     required: true,
