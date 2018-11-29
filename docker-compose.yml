@@ -11,6 +11,6 @@ services:
   mongo:
     image: mongo
     volumes:
-      - /mnt/sda1/var/lib/mongo-data:/data/db
+      - /Users/ulff/.docker/data/mongo-data:/data/db
     ports:
       - "27017:27017"
