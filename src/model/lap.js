@@ -1,4 +1,4 @@
-const mongoose = require('../db/mongoose');
+const mongoose = require('../db/connection');
 
 const Lap = mongoose.model('Lap', {
   time: {
