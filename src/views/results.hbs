@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+    <tr>
+        <th>Session</th>
+        <th>Identifier</th>
+        <th>Date</th>
+        <th>Time</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#results}}
+        <tr>
+            <td>{{session}}</td>
+            <td>{{identifier}}</td>
+            <td>{{date}}</td>
+            <td class="result">{{time}} ms</td>
+        </tr>
+    {{/results}}
+    </tbody>
+</table>
