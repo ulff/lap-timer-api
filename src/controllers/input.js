@@ -5,6 +5,9 @@ const router = express.Router();
 
 router.post('/laps',  (req, res) => {
   const lap = new Lap({
+    session: req.body.session,
+    identifier: req.body.identifier,
+    date: new Date(req.body.date*1000),
     time: parseInt(req.body.time, 10),
   });
 
