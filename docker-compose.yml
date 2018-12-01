@@ -1,0 +1,16 @@
+version: "2"
+services:
+  app:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8080:8080"
+    links:
+      - mongo
+  mongo:
+    image: mongo
+    volumes:
+      - /Users/ulff/.docker/data/mongo-data:/data/db
+    ports:
+      - "27017:27017"

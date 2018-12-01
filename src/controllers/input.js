@@ -1,12 +1,17 @@
 const express = require('express');
+const { Lap } = require('../model/lap');
 
 const router = express.Router();
 
-router.post('/times',  (req, res) => {
-  console.log(`Received time: ${req.body.time}`);
-  res.status(201).json({
-    id: 'e86556be-ef86-4a6e-92f3-2013da9aa5b2',
-    time: req.body.time,
+router.post('/laps',  (req, res) => {
+  const lap = new Lap({
+    time: parseInt(req.body.time, 10),
+  });
+
+  lap.save().then((document) => {
+    res.status(201).json(document);
+  }, (err) => {
+    res.status(400).send(err);
   });
 });
 
