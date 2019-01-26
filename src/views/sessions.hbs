@@ -1,0 +1,28 @@
+<h2>Session list</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Session</th>
+        <th>Participants</th>
+        <th>Total laps</th>
+        <th>Started at</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#sessions}}
+        <tr>
+            <td>{{session}}</td>
+            <td>{{participants}}</td>
+            <td>{{laps}}</td>
+            <td>{{date}}</td>
+            <td>
+                <button onclick="location.href='/results/sessions/{{session}}'" type="button">
+                    View results
+                </button>
+            </td>
+        </tr>
+    {{/sessions}}
+    </tbody>
+</table>

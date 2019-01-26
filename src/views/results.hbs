@@ -1,8 +1,10 @@
+<h2>The results</h2>
+
 <table class="table">
     <thead>
     <tr>
         <th>Session</th>
-        <th>Identifier</th>
+        <th>Participant</th>
         <th>Date</th>
         <th>Time</th>
     </tr>
@@ -11,7 +13,7 @@
     {{#results}}
         <tr>
             <td>{{session}}</td>
-            <td>{{identifier}}</td>
+            <td><a href="/results/sessions/{{session}}/participants/{{identifier}}">{{identifier}}</a></td>
             <td>{{date}}</td>
             <td class="result">{{time}} ms</td>
         </tr>
